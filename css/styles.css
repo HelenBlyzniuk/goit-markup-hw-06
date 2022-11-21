@@ -279,7 +279,7 @@ header {
 
 .personal-data:focus {
 border: 1px solid #2196F3;
-
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decor{
@@ -315,7 +315,10 @@ border: 1px solid #2196F3;
 
 .personal-data:focus+.modal-icon{
   fill:#2196F3;
+  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .btn-agree{
   display:block;
@@ -344,10 +347,15 @@ border: 1px solid #2196F3;
 .btn-agree:hover{
   cursor: pointer;
   
-    background: #2196F3;
+    background-color: #2196F3;
       border: 1px solid #2196F3;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                 border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -388,9 +396,25 @@ border: 1px solid #2196F3;
 
 .agreement-img{
   display:inline-block;
+  
   width:16px;
   height:15px;
+
   
+}
+.user-agreement:checked~.agreement-img-before{
+  opacity:0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-img-before {
+  display: block;
+  height: 15px;
+  width: 16px;
+  border: 1px solid #212121;
+  background-color: var(--additional-color);
+    transform: translateX(-100%);
+    opacity:1;
 }
 /*---------------hero------------*/
 
