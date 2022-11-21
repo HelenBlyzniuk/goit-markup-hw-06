@@ -946,6 +946,12 @@ address {
     color: #FFFFFF;
 
  }
+
+ .btn-sign-up:hover
+ {
+  cursor:pointer;
+  
+ }
  
  .btn-sign-up::after{
   content:'';
