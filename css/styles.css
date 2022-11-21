@@ -273,6 +273,7 @@ header {
   
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline:none;
 
 }
 
@@ -312,7 +313,7 @@ border: 1px solid #2196F3;
     letter-spacing: 0.01em; 
 }
 
-.personal-inf:focus-within >.modal-icon{
+.personal-data:focus+.modal-icon{
   fill:#2196F3;
 }
 
@@ -353,10 +354,12 @@ border: 1px solid #2196F3;
 .agreement{
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
 .agreement-input{
   margin-left:8px;
+
   
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -373,6 +376,21 @@ border: 1px solid #2196F3;
   
     letter-spacing: 0.03em;
     color: #2196F3;
+}
+
+.user-agreement{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance:none ;
+  position:absolute;
+}
+
+.agreement-img{
+  display:inline-block;
+  width:16px;
+  height:15px;
+  
 }
 /*---------------hero------------*/
 
