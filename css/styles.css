@@ -220,6 +220,10 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.close:focus{
+  fill:#2196F3;
+}
+
 .close-img{
   display: block;
   align-items: center;
@@ -271,12 +275,10 @@ header {
 
 }
 
-.personal-data:focus{
+.personal-data:focus {
 border: 1px solid #2196F3;
-fill:rgba(33, 150, 243, 1);
- 
-}
 
+}
 
 .decor{
   position:relative;
@@ -291,24 +293,27 @@ fill:rgba(33, 150, 243, 1);
 
 .text-comment{
   height:120px;
+  padding:12px 16px;
+  
   
 }
 .personal-inf{
 
   display:inline-block;
-  margin-bottom: 4px;
+  
   font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height:1.666;
-    /* identical to box height */
-  
-    letter-spacing: 0.01em;
-  
     color: #757575;
+   
+    letter-spacing: 0.01em; 
 }
 
+.personal-inf:focus-within >.modal-icon{
+  fill:#2196F3;
+}
 
 
 /*---------------hero------------*/
