@@ -812,14 +812,18 @@ address {
   padding: 0;
 }
 
-.contact-footer {
+.contact-footer-item {
 
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-weight:400;
 
 }
 
+.contact-footer-item:not(:last-of-type){
+  margin-bottom: 9px;
+}
 
 .footer-logo {
   margin: 0;
@@ -932,7 +936,7 @@ address {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: rgba(33, 150, 243, 1);
+  border:none;
 
   font-family: 'Roboto';
     font-style: normal;
